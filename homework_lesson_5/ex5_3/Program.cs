@@ -4,7 +4,7 @@
 double [] array = new double [ new Random().Next(4, 10)];
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().Next(-100, 101);
+    array[i] = new Random().NextDouble();
     Console.Write(array[i] + " ");
 }
 
