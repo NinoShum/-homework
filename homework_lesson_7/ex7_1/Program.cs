@@ -13,8 +13,7 @@ double[,] CreateArray (int m, int n)
             array[i,j] = new Random().NextDouble() * 100;
             array[i,j] = Math.Round(array[i,j],2);
             
-        }
-       
+        }  
 
     }
 
@@ -37,10 +36,10 @@ void PrintArray (double [,] array)
    
 }
 
-Console.WriteLine("Введите количество столбцов: ");
+Console.WriteLine("Введите количество строк: ");
 int M = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите количество строк: ");
+Console.WriteLine("Введите количество столбцов: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
 double [,] ResaltArray = CreateArray(M,N);
